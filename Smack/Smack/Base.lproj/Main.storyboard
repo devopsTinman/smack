@@ -180,8 +180,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roc-de-wg8">
-                                <rect key="frame" x="100" y="70" width="175" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roc-de-wg8">
+                                <rect key="frame" x="103" y="70" width="169" height="23"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -194,6 +194,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="closeButton"/>
                                 <connections>
+                                    <action selector="closePressed:" destination="58b-c1-EGO" eventType="touchUpInside" id="CgV-7t-No4"/>
                                     <action selector="closedPressed:" destination="ank-mK-2kL" eventType="touchUpInside" id="hZr-sb-EFf"/>
                                 </connections>
                             </button>
@@ -228,6 +229,7 @@
                             <constraint firstItem="nNd-WW-fiw" firstAttribute="centerX" secondItem="w3p-Lp-lzN" secondAttribute="centerX" id="Ebn-XX-HPU"/>
                             <constraint firstItem="jcc-yf-Gqn" firstAttribute="top" secondItem="roc-de-wg8" secondAttribute="bottom" constant="40" id="HE6-KE-HjF"/>
                             <constraint firstItem="LrJ-wa-ng4" firstAttribute="trailing" secondItem="UbB-BW-HnH" secondAttribute="trailing" constant="16" id="MdB-Ks-ESw"/>
+                            <constraint firstItem="roc-de-wg8" firstAttribute="centerX" secondItem="w3p-Lp-lzN" secondAttribute="centerX" id="PCh-fA-dY0"/>
                             <constraint firstItem="roc-de-wg8" firstAttribute="top" secondItem="LrJ-wa-ng4" secondAttribute="top" constant="50" id="UwL-pd-TT2"/>
                             <constraint firstItem="OEj-BZ-XpB" firstAttribute="centerX" secondItem="w3p-Lp-lzN" secondAttribute="centerX" id="Xhp-z5-Wsa"/>
                             <constraint firstItem="8gD-fO-N8A" firstAttribute="centerX" secondItem="w3p-Lp-lzN" secondAttribute="centerX" id="ZBT-bW-lJP"/>
@@ -238,8 +240,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LrJ-wa-ng4"/>
                     </view>
+                    <connections>
+                        <segue destination="I4r-Sm-Abw" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="wLE-hB-PM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nI3-ak-Yww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="I4r-Sm-Abw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2157.5999999999999" y="-245.12743628185908"/>
         </scene>
