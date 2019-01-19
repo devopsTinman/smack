@@ -116,6 +116,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="ank-mK-2kL" eventType="touchUpInside" id="87v-wF-ovl"/>
+                                    <action selector="pickAvatarPressed:" destination="58b-c1-EGO" eventType="touchUpInside" id="tfj-bk-ssW"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="jcc-yf-Gqn">
@@ -168,7 +169,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHy-l4-ykZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHy-l4-ykZ" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -179,6 +180,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAcctPressed:" destination="58b-c1-EGO" eventType="touchUpInside" id="Yuv-xh-JWS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roc-de-wg8">
                                 <rect key="frame" x="103" y="70" width="169" height="23"/>
@@ -217,6 +226,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="ank-mK-2kL" eventType="touchUpInside" id="ktl-yv-OT4"/>
+                                    <action selector="generateBackgroundPressed:" destination="58b-c1-EGO" eventType="touchUpInside" id="WId-4e-YEs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -241,6 +251,10 @@
                         <viewLayoutGuide key="safeArea" id="LrJ-wa-ng4"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="79j-Bs-IQz" id="Ogu-6y-Ltd"/>
+                        <outlet property="passTxt" destination="R3O-KG-fxL" id="5Ia-4d-dh9"/>
+                        <outlet property="userImg" destination="OEj-BZ-XpB" id="zSH-mV-wz5"/>
+                        <outlet property="usernameTxt" destination="Tte-nw-2aS" id="1sj-by-vKB"/>
                         <segue destination="I4r-Sm-Abw" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="wLE-hB-PM3"/>
                     </connections>
                 </viewController>
@@ -444,7 +458,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-6D-rkd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-6D-rkd" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -455,6 +469,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

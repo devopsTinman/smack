@@ -18,6 +18,8 @@
 		71A8425921EFFD9A00FDA7F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A8425721EFFD9A00FDA7F1 /* Main.storyboard */; };
 		71A8425B21EFFD9A00FDA7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A8425A21EFFD9A00FDA7F1 /* Assets.xcassets */; };
 		71A8425E21EFFD9A00FDA7F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A8425C21EFFD9A00FDA7F1 /* LaunchScreen.storyboard */; };
+		71D174CB21F34DC1001A0450 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D174CA21F34DC1001A0450 /* AuthService.swift */; };
+		71D174CD21F3DF2E001A0450 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D174CC21F3DF2E001A0450 /* RoundedButton.swift */; };
 		D9678C0E4711551BDA92C6FE /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBF78C83BA603D0B9CF5AFF /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		71A8425A21EFFD9A00FDA7F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71A8425D21EFFD9A00FDA7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71A8425F21EFFD9A00FDA7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D174CA21F34DC1001A0450 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		71D174CC21F3DF2E001A0450 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		F02EE1EC652A4FA36E34CC32 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				7182A7D821F1212600CC3EDA /* GradientView.swift */,
+				71D174CC21F3DF2E001A0450 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 		71A8425221EFFD9A00FDA7F1 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				71D174C921F34DA9001A0450 /* Services */,
 				7182A7DA21F25D8D00CC3EDA /* Utilities */,
 				7182A7CC21F11AFD00CC3EDA /* View */,
 				7182A7CE21F11B1300CC3EDA /* Model */,
@@ -139,6 +145,14 @@
 				71A8425F21EFFD9A00FDA7F1 /* Info.plist */,
 			);
 			path = Smack;
+			sourceTree = "<group>";
+		};
+		71D174C921F34DA9001A0450 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				71D174CA21F34DC1001A0450 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A747A8CC50E3DE4FC0164D03 /* Pods */ = {
@@ -271,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7182A7D221F11B4900CC3EDA /* ChannelVC.swift in Sources */,
+				71D174CD21F3DF2E001A0450 /* RoundedButton.swift in Sources */,
 				7182A7D021F11B3700CC3EDA /* ChatVC.swift in Sources */,
 				7182A7E021F2937500CC3EDA /* CreateAccountVC.swift in Sources */,
+				71D174CB21F34DC1001A0450 /* AuthService.swift in Sources */,
 				7182A7DE21F26D1C00CC3EDA /* LoginVC.swift in Sources */,
 				7182A7D921F1212600CC3EDA /* GradientView.swift in Sources */,
 				71A8425421EFFD9A00FDA7F1 /* AppDelegate.swift in Sources */,
