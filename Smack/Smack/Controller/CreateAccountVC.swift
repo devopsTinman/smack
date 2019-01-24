@@ -63,6 +63,11 @@ class CreateAccountVC: UIViewController {
     @IBAction func generateBackgroundPressed(_ sender: Any) {
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
+    }
 
 }
