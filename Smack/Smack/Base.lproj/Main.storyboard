@@ -459,6 +459,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="LIJ-26-UOl" id="nBq-NM-YBd"/>
+                        <outlet property="userImg" destination="KtD-pQ-kqH" id="Nu4-yd-KX9"/>
                         <segue destination="ank-mK-2kL" kind="show" identifier="toLogin" id="3qZ-qe-J9U"/>
                     </connections>
                 </viewController>
@@ -572,17 +573,26 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="ank-mK-2kL" eventType="touchUpInside" id="MTG-Wz-v6Q"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-am-aCF">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FO6-6D-rkd" firstAttribute="top" secondItem="lfm-So-BfF" secondAttribute="bottom" constant="40" id="1pv-EN-pMa"/>
+                            <constraint firstItem="qb7-am-aCF" firstAttribute="centerX" secondItem="RMW-mL-423" secondAttribute="centerX" id="EaW-wp-lzP"/>
                             <constraint firstItem="FO6-6D-rkd" firstAttribute="centerX" secondItem="RMW-mL-423" secondAttribute="centerX" id="J3U-Gi-Yxl"/>
                             <constraint firstItem="lfm-So-BfF" firstAttribute="centerX" secondItem="RMW-mL-423" secondAttribute="centerX" id="Nba-xI-cGN"/>
                             <constraint firstItem="SuR-VL-6lD" firstAttribute="top" secondItem="FO6-6D-rkd" secondAttribute="bottom" id="SFI-61-cPT"/>
                             <constraint firstItem="47q-nx-z3P" firstAttribute="top" secondItem="nsy-qD-F8z" secondAttribute="top" constant="60" id="dN5-ze-dyk"/>
                             <constraint firstItem="lfm-So-BfF" firstAttribute="top" secondItem="47q-nx-z3P" secondAttribute="bottom" constant="40" id="nYm-ZO-njm"/>
                             <constraint firstItem="SuR-VL-6lD" firstAttribute="centerX" secondItem="RMW-mL-423" secondAttribute="centerX" id="qf0-c4-zef"/>
+                            <constraint firstItem="qb7-am-aCF" firstAttribute="centerY" secondItem="RMW-mL-423" secondAttribute="centerY" constant="-100" id="tow-MJ-5cd"/>
                             <constraint firstItem="nsy-qD-F8z" firstAttribute="trailing" secondItem="8WW-bq-Q0T" secondAttribute="trailing" constant="16" id="u0x-6d-6de"/>
                             <constraint firstItem="47q-nx-z3P" firstAttribute="centerX" secondItem="RMW-mL-423" secondAttribute="centerX" id="ukj-DC-5KS"/>
                             <constraint firstItem="8WW-bq-Q0T" firstAttribute="top" secondItem="nsy-qD-F8z" secondAttribute="top" constant="16" id="vy1-se-tEW"/>
@@ -590,6 +600,9 @@
                         <viewLayoutGuide key="safeArea" id="nsy-qD-F8z"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="YrW-FW-Lku" id="zfV-vA-HEW"/>
+                        <outlet property="spinner" destination="qb7-am-aCF" id="rmQ-7r-OAh"/>
+                        <outlet property="usernameTxt" destination="sLn-sf-RF9" id="lnX-Fr-L1t"/>
                         <segue destination="58b-c1-EGO" kind="show" identifier="toCreateAccount" id="fIy-LU-ihh"/>
                     </connections>
                 </viewController>
