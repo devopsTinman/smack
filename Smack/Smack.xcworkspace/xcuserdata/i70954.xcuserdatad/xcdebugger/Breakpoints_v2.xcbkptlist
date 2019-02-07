@@ -9,61 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Smack/View/ChannelCell.swift"
-            timestampString = "571089758.885537"
+            filePath = "Smack/Controller/ChannelVC.swift"
+            timestampString = "571166651.958075"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "configureCell(channel:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Smack.ChannelCell.configureCell(channel: Smack.Channel) -&gt; ()"
-                  moduleName = "Smack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/i70954/Documents/Smack/smack/Smack/Smack/View/ChannelCell.swift"
-                  timestampString = "571089758.986315"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "162">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.String in Smack.ChannelCell.configureCell(channel: Smack.Channel) -&gt; ()"
-                  moduleName = "Smack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/i70954/Documents/Smack/smack/Smack/Smack/View/ChannelCell.swift"
-                  timestampString = "571089758.9942501"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Smack/View/ChannelCell.swift"
-            timestampString = "571089758.885622"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "configureCell(channel:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "addChannelPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

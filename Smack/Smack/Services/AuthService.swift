@@ -86,7 +86,7 @@ class AuthService {
                 self.authToken = json["token"].stringValue
                 
                 self.isLoggedIn = true
-                //print("Just Returned from Login")
+                print("Just Returned from Login")
                 completion(true)
                 
             } else {
@@ -139,7 +139,7 @@ class AuthService {
     
     func setUserInfo(data: Data) {
         
-        let json = try! JSON(data: data)
+        let json = JSON(data: data)
         let id = json["_id"].stringValue
         let color = json["avatarColor"].stringValue
         let avatarName = json["avatarName"].stringValue

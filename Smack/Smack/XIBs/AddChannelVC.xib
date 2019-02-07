@@ -34,7 +34,7 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-S2-aTZ">
-                    <rect key="frame" x="20" y="170" width="335" height="320"/>
+                    <rect key="frame" x="20" y="70" width="335" height="320"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg9-J0-0P5">
                             <rect key="frame" x="297" y="8" width="30" height="30"/>
@@ -137,7 +137,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sEc-3f-9rp" secondAttribute="bottom" id="AYW-ta-vOH"/>
                 <constraint firstItem="sEc-3f-9rp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ir2-Ou-jJR"/>
                 <constraint firstItem="sEc-3f-9rp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UUp-o4-3m9"/>
-                <constraint firstItem="MLT-S2-aTZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="VCo-PF-Xph"/>
+                <constraint firstItem="MLT-S2-aTZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="VCo-PF-Xph"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MLT-S2-aTZ" secondAttribute="trailing" constant="20" id="fxJ-tK-LXw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sEc-3f-9rp" secondAttribute="trailing" id="jW8-lQ-F3K"/>
                 <constraint firstItem="MLT-S2-aTZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ypX-ch-jWg"/>
